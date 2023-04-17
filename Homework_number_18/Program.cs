@@ -11,7 +11,7 @@ namespace Homework_number_18
         static void Main(string[] args)
         {
             bool isLineCorrect = true;
-            string line = "(()))(()";
+            string line = "((()(()))";
             int numberBracketOpen = 0;
             int numberBracketClose = 0;
             int maxNumberOpenBrackets = 0;
@@ -40,19 +40,14 @@ namespace Homework_number_18
                 }
             }
 
-            numberBracketOpen = 0;
-            numberBracketClose = 0;
-
             foreach (char item in line)
             {
                 if (item == '(')
                 {
-                    numberBracketOpen++;
                     evaluationVisas++;
                 }
                 else if (item == ')' && evaluationVisas != 0)
                 {
-                    numberBracketClose++;
                     evaluationVisas--;
                 }
                 else if (item == ')' && evaluationVisas == 0)
@@ -64,7 +59,7 @@ namespace Homework_number_18
 
 
 
-            if (isLineCorrect != false && numberBracketOpen % numberBracketClose == 0 && evaluationVisas == 0)
+            if (isLineCorrect != false && evaluationVisas == 0)
             {
                 if (maxNumberOpenBrackets >= maxNumberCloseBrackets)
                 {
