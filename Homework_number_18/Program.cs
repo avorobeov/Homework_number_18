@@ -11,7 +11,7 @@ namespace Homework_number_18
         static void Main(string[] args)
         {
             bool isLineCorrect = true;
-            string line = "((()(()))";
+            string line = "(()(()))";
             int numberBracketOpen = 0;
             int numberBracketClose = 0;
             int maxNumberOpenBrackets = 0;
