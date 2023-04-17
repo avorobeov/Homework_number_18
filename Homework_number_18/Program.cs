@@ -57,8 +57,6 @@ namespace Homework_number_18
                 }
             }
 
-
-
             if (isLineCorrect != false && evaluationVisas == 0)
             {
                 if (maxNumberOpenBrackets >= maxNumberCloseBrackets)
